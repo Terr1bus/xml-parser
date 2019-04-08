@@ -1,0 +1,17 @@
+{
+  "name": "xml-parser",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Terr1bus/xml-parser.git",
+  "author": "Terr1bus <qwant94@mail.ru>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack"
+  },
+  "dependencies": {
+    "webpack": "^4.29.6"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.0"
+  }
+}
