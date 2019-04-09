@@ -4,5 +4,10 @@ function getXmlPath() {
     return; // TODO: Add error near input field
   }
 
-  const xmlPath = url.match(/[?|&]XML=(.*\.xml)/iU);
+  // TODO: Add check if more than one XML parameters in query string
+  const xmlRegexpMatch = url.match(/[?|&]XML=(.*?\.xml)/i);
+  const xmlPath = xmlRegexpMatch && xmlRegexpMatch.length > 0 ? xmlRegexpMatch[1] : null;
+  return xmlPath;
 }
+
+document.getElementById('button').addEventListener('click', getXmlPath);
