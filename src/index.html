@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>XML Parser</title>
+  <style>
+    table {
+      margin-top: 20px;
+      border-collapse: collapse;
+    }
+
+    table th,
+    table td {
+      border: 1px solid black;
+      text-align: center;
+    }
+  </style>
+  <script src="/index.js" defer></script>
+</head>
+<body>
+  <label>
+    Введите адрес ссылки с XML параметром:
+    <input id="url" value="http://localhost/litrestest.html?XML=/Viygotskiyi_viy_L._Psihologiya_Iskusstva.xml"/>
+  </label>
+  <button id="button">Отправить</button>
+
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th>Internal links count</th>
+        <th>Letters count (w/o spaces)</th>
+        <th>Letters count (w/ spaces)</th>
+        <th>Internal broken links count</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="file-name">[File name]</td>
+        <td id="links">0</td>
+        <td id="letters-w/o-spaces">0</td>
+        <td id="letters-w/-spaces">0</td>
+        <td id="broken-links">0</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
